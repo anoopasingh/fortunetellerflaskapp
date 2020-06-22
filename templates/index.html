@@ -1,13 +1,33 @@
 <html>
     <head>
-        <title>Welcome!</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="static/css/style.css?q={{ time }}" />
+       
+        <title>Fortune Teller</title>
     </head>
     <body>
-        <h1>Hello world!</h1>
-        <p>We can build a full webpage here</p>
-        <form>
-            <input type="text" name="nickname" value="Enter your nickname"/>
-            <input type="submit" value="Submit"/>
+        <h1> Welcome to Madame Singh's Magic Tea Parlor </h1>
+       <div class="center"> <img src="/static/images/teaparlor.jpg" alt="tea"></img> </div>
+
+        
+       <div class="container">
+            <div class="center">
+        <form id="formcenterinput" method= "post" action ="/results">
+            <label for="fname">Enter your name<name="Enter your name"> </label><br>
+            <input type="text" name="formname" id="username" placeholder="Name"><br>
+           
+            <h4> Choose a type of fortune!</h4>
+            <input class="formcenterinput" type="radio"  name="fortune" id="Love" value="Love">
+            <label class="formcenterlabel" for="Love">Love</label><br>
+            <input class="formcenterinput"type="radio"  name="fortune" id="Career" value="Career">
+            <label class="formcenterlabel" for="Career">Career</label><br>
+            <input class="formcenterinput"type="radio"  name="fortune" id="Luck" value="Luck">
+            <label class="formcenterlabel"for="Luck">Luck</label><br>
+            
+            <input class="formcenterinput" type="submit" value="Submit"/>
         </form>
+        </div>
+        </div>
+
     </body>
 </html>
